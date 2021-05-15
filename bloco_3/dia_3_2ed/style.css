@@ -1,12 +1,27 @@
-h1, p {
-  text-align: center;
+div:hover {
+  border-style:inset;
+  
 }
-li:hover {
-  background-color: red;
+.cprimaria{
+  border-color: yellow;
 }
-li:active {
-  font-family: Arial, Helvetica, sans-serif;
+.csecundaria{
+  border-color: green;
 }
-ul{
-  list-style: none;
-} 
+.ccomplementar{
+  padding: 15em 10em;
+  border-color: rebeccapurple;
+}
+.cescura{
+  border-color: brown
+}
+.cclara{
+  border-color: white;
+}
+h3{
+  background-color: tomato;
+  color: whitesmoke;
+}
+h3:nth-child(odd) {
+  font-style: italic;
+}
