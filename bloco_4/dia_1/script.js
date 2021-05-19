@@ -1,7 +1,7 @@
 let a = 10;
 let b = 7;
-let soma;
+let resultado;
 
-soma = a + b;
+resultado = a - b;
 
-console.log(soma);
+console.log(resultado);
