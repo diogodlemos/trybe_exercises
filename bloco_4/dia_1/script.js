@@ -1,6 +1,8 @@
-let nota = -10;
+let nota = 40;
 
-if (nota >= 90){
+if (nota < 0 || nota > 100) {
+    console.log('Erro!');
+}else if (nota >= 90){
     console.log('Conceito A');
 }else if (nota >= 80){
     console.log('Conceito B');
@@ -10,6 +12,6 @@ if (nota >= 90){
     console.log('Conceito D');
 } else if (nota >= 50){
     console.log('Conceito E');
-}else if (nota < 50) {
+}else {
     console.log('Conceito F');
 }
