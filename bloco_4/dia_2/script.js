@@ -1,12 +1,10 @@
 let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 
-for (let index = 1; index < numbers.length; index += 1) {
-    for (let secondIndex = 0; secondIndex < index; secondIndex += 1) {
-        if (numbers[secondIndex] <  numbers[index]) {
-            let position = numbers[secondIndex];
-            numbers[secondIndex] = numbers[index];
-            numbers[index] = position;
-        }
+let multiplicado = [];
+for (let index = 0; index < numbers.length; index += 1) {
+    if(index === numbers.length-1) {
+        multiplicado.push((numbers[index])*2);
     }
-  }
-  console.log(numbers);
+    multiplicado.push(numbers[index]*numbers[index+1]);
+}
+  console.log(multiplicado);
