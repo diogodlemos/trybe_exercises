@@ -1,17 +1,10 @@
-let nota = 40;
+let num1 = 20;
+let num2 = 10;
+let num3 = 8;
 
-if (nota < 0 || nota > 100) {
-    console.log('Erro!');
-}else if (nota >= 90){
-    console.log('Conceito A');
-}else if (nota >= 80){
-    console.log('Conceito B');
-} else if (nota >= 70){
-    console.log('Conceito C');
-} else if (nota >= 60){
-    console.log('Conceito D');
-} else if (nota >= 50){
-    console.log('Conceito E');
+if (num1 % 2 ===0 || num2 % 2 ===0 || num3 % 2 ===0) {
+    console.log(true);
 }else {
-    console.log('Conceito F');
+    console.log('false');
 }
+
