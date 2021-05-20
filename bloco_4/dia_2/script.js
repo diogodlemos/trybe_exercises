@@ -1,9 +1,13 @@
-let numbers = [5, 9, 3, 190, 70, 8, 100,2, 35, 27];
+let numbers = [5, 9, 3, 191, 70, 8, 100,2, 35, 27];
 
-let maiorValor = 0;
+let valoresImpares = 0;
 for (index = 0; index < numbers.length; index += 1) {
-    if(numbers[index] > maiorValor) {
-        maiorValor = numbers[index];
+    if(numbers[index] % 2 !== 0) {
+        valoresImpares += 1;
     }
 }
-console.log('O Maior valor do Array é : '+maiorValor);
+if(valoresImpares === 0){
+    console.log('Nenhum valor impar encontrado');
+}
+
+console.log('O numero de valores impares do Array é : '+valoresImpares);
