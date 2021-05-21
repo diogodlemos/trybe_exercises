@@ -1,13 +1,17 @@
-let num = 15;
-
+let num = 5;
 let saida='';
+let posicaoDeEntrada = num;
+
 for (let coluna = 0; coluna < num; coluna += 1){
-    for (let linha = 0; linha < num; linha += 1) {
-        saida = saida + '*';
-        if(linha === coluna) {
-            saida = saida + '\n';
-            linha = num;
+    for (let linha = 0; linha <= num; linha += 1) {
+        if (linha < posicaoDeEntrada) {
+            saida += ' ';           
+        }
+        else {
+            saida += '*';
         }
     }
+    console.log(saida);
+    saida = '';
+    posicaoDeEntrada -= 1;
 }
-console.log(saida);
