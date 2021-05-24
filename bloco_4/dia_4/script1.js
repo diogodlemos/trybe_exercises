@@ -1,16 +1,23 @@
-let info = {
-      personagem: 'Margarida',
-      origem: 'Pato Donald',
-      nota: 'Namorada do personagem principal nos quadrinhos do Pato Donald',
-      recorrente: 'Sim'
-    };
-let segundaInfo = {
-      personagem: 'Tio Patinhas',
-      origem: "Christmas on Bear Mountain, Dell's Four Color Comics #178",
-      nota: 'O último MacPatinhas',
-      recorrente: 'Sim'
-    };
-
-  for (let key in info) {
-    console.log(info[key] + ' e '+segundaInfo[key]);
+function isPalindromo (palavra) {
+  let palavraInvertida = [];
+  let quantidade = 0;
+  palavra = palavra.split('');
+  for (let index = palavra.length - 1; index >= 0; index -= 1 ) {
+    palavraInvertida.push(palavra[index]);
   }
+  for (let index = 0; index < palavra.length; index += 1 ) {
+    if (palavra[index]===palavraInvertida[index]) {
+        quantidade += 1;
+    }
+  }
+  if (quantidade === palavra.length) {
+    return true;
+  } else {
+    return false;
+  } 
+ 
+      
+}
+
+let resposta = isPalindromo('desenvolvimento');
+console.log(resposta);
