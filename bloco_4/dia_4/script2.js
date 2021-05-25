@@ -1,11 +1,11 @@
 function verificaIndiceDoMaior (entrada) {
-  let maiorValor = 0;
+  let indiceMaiorValor = 0;
   for (let index = 0; index < entrada.length; index += 1){
-      if (entrada[index] > maiorValor ) {
-          maiorValor = index;
+      if (entrada[index] > indiceMaiorValor ) {
+          indiceMaiorValor = index;
       }
   }
-  return maiorValor;
+  return indiceMaiorValor;
 }
 
 let numeros = [2, 3, 6, 7, 10, 1]; 
