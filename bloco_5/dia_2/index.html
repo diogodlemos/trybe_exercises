@@ -61,7 +61,7 @@
         let localOndeVouCriar = document.getElementsByTagName('body')[0];
         
         let tagTitulo = document.createElement('h1');
-        tagTitulo.innerText = 'Galo Doido!';
+        tagTitulo.innerText = 'Exercício 5.2 - JavaScript DOM';
         localOndeVouCriar.appendChild(tagTitulo);        
 
 // Adicione a tag div com a classe main-content como filho da tag body ;
@@ -106,7 +106,8 @@
         for(let i = 0; i < array.length; i += 1) {
             let li = document.createElement('li');
             li.innerText = array[i];
-            elementFather6.appendChild(li);       }
+            elementFather6.appendChild(li);       
+        }
 
 // Adicione 3 tags h3 , todas sendo filhas do div criado no passo 2.
             let elementFather7 = document.querySelector('.main-content');
@@ -115,7 +116,28 @@
                 h3.innerText = 'bhdvfakhkhcbdkjqnljvfwbekqa';
                 elementFather7.appendChild(h3);
             }
+            
+//             Adicione a classe title na tag h1 criada;
+            tagTitulo.className = 'title';
 
+// Adicione a classe description nas 3 tags h3 criadas;
+            for(let i = 0; i < 3; i += 1) {
+                let elementFather8 = document.getElementsByTagName('h3')[i];
+                elementFather8.className = 'description';
+            }
+// Remova o div criado no passo 5 (aquele que possui a classe left-content ). Utilize a função .removeChild() ;
+            let elementFather9 = document.querySelector('.center-content');
+            elementFather9.removeChild(div3);
+// Centralize o div criado no passo 6 (aquele que possui a classe right-content ). Dica: para centralizar, basta configurar o margin-right: auto do div ;
+            div4.style.marginRight = 'auto';
+// Troque a cor de fundo do elemento pai da div criada no passo 3 (aquela que possui a classe center-content ) para a cor verde;
+            div.style.backgroundColor = 'green';
+// Remova os dois últimos elementos ( nove e dez ) da lista criada no passo 8.
+        let elementFather10 = document.querySelectorAll('.rigth-content ul li');
+        for(let i = 0; i < array.length; i += 1) {
+          if(array[i] === 'nove' || array[i] === 'dez')
+            elementFather10.removeChild(li);       
+        }
     </script>
   </body>
 </html>
