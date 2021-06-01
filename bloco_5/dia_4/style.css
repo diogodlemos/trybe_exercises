@@ -1,0 +1,68 @@
+.op-colorbg{
+  border-radius: 100%;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.op-size-text{
+  border-radius: 8%;
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  margin-right: 20px;
+}
+
+#op1{
+  background-color: #b5e7a0;
+  border-style: solid;
+}
+
+#op2{
+  background-color: #618685;
+  border-style: solid;
+}
+
+#op3{
+  background-color: #ffef96;
+  border-style: solid;
+}
+
+#op4{
+  background-color: #3e4444;
+  border-style: solid;
+}
+
+#color-text1{
+    background-color: white;
+    border-style: solid;
+}
+
+#color-text2{
+    background-color: black;
+    border-style: solid;
+}
+
+#color-text3{
+    background-color: red;
+    border-style: solid;
+}
+
+#size1{
+  border-style: solid; 
+}
+
+#size2{
+    border-style: solid; 
+}
+
+#size3{
+    border-style: solid; 
+}
+
+.container-options-colorsbg{
+  height: 100px;
+  width: 100%;
+  bottom: 0%;
+}
