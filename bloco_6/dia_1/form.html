@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Cadastro de Currículos</h1>
+  <form action="" method="get">
+      <!-- Campo para preencher o nome -->
+      <fieldset>
+        <div class="containers">
+            <label for="text-name">Digite o seu nome:
+              <input type="text" placeholder="Digite seu nome" id="text-name" name="nome" required> 
+            </label>
+        </div>
+    
+        <!-- Campo para email -->
+        <div class="containers">
+            <label for="text-email">Digite o seu email:
+                <input type="text" placeholder="Digite seu email" id="text-email" name="email" required> 
+            </label>
+        </div>
+    
+        <!-- campo para inserir CPF -->
+        <div class="containers">
+            <label for="text-cpf">Digite o seu CPF:
+              <input type="text" placeholder="Digite seu CPF" id="text-cpf" name="cpf" required> 
+            </label>
+        </div>
+
+        <!-- Campo para inserir endereço -->
+        <div class="containers">
+            <label for="text-adress">Digite o seu endereço:
+              <input type="text" placeholder="Digite seu endereço" id="text-adress" name="adress" required> 
+            </label>
+        </div>
+
+        <!-- Campo para inserir a cidade -->
+        <div class="containers">
+            <label for="text-city">Digite sua cidade:
+              <input type="text" placeholder="Digite sua cidade" id="text-city" name="city" required> 
+            </label>
+        </div>
+        
+        <!-- Estrutura para selecionar o Estado -->
+        <div class="containers">
+            <div class="containers">
+                <label for="states">Selecione seu Estado</label>
+                <select name="list-states" id="states" required></select>
+            </div>
+        </div>
+
+        <!-- Estrutura para selecionar casa ou apartamento -->
+        <div class="containers">
+            <input type="radio" name="house-type" id="apartment" value="apartment">
+            <label for="apartment">Apartamento</label>
+        
+            <input type="radio" name="house-type" id="house" value="house">
+            <label for="house">Casa</label>
+        </div>
+      </fieldset>
+
+      <fieldset>
+          <!--Resumo do curriculo  -->
+        <div class="containers">
+            <label for="abstract-cv">Escreva um resumo do seu curriculo</label>
+            <textarea name="abstract-cv" id="abstract-cv" required></textarea>
+        </div>
+
+        <!-- Cargos -->
+        <div class="containers">
+            <label for="experience">Escreva sua experiência profissional</label>
+            <input type="text" name="experience" id="experience" required>
+        </div>
+
+        <!-- Descrição do cargo -->
+        <div class="containers">
+            <label for="description">Descreva as atividades que você exercia</label>
+            <input type="text" name="description" id="description" required>
+        </div>
+
+
+        <!-- Data de inicio -->
+        <div class="containers">
+          <label for="date-job">Insira a data de inicio do seu ultimo emprego</label>
+          <br>
+          <input type="text" name="date-job" id="date-job" placeholder="dd/mm/aaaa" required>
+        </div>
+      </fieldset>
+  </form>  
+  <script src="script.js"></script>
+</body>
+</html>
