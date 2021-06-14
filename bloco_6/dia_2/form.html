@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario</title>
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+  <!-- pickday -->
+  <script src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/pikaday/css/pikaday.css">
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <h1 class="h1 display1 container">Cadastro de Currículos</h1>
+  <form action="" method="get">
+    <!-- Campo para preencher o nome -->
+    <div class="container">
+      <label class = 'form-label' for="text-name">Digite o seu nome:</label>
+      <input  class = 'form-control just-validate' type="text" placeholder="Digite seu nome" id="text-name" name="nome" required> 
+    
+    </div>
+
+    <!-- Campo para email -->
+    <div class="container">
+      <label class="form-label" for="text-email">Digite o seu email:</label>
+      <input class="form-control" type="text" placeholder="Digite seu email" id="text-email" name="email" required> 
+        
+    </div>
+
+    <!-- campo para inserir CPF -->
+    <div class="container">
+      <label class="form-label" for="text-cpf">Digite o seu CPF: </label>
+      <input class="form-control" type="text" placeholder="Digite seu CPF" id="text-cpf" name="cpf" required> 
+    </div>
+
+    <!-- Campo para inserir endereço -->
+    <div class="container">
+      <label class="form-label" for="text-adress">Digite o seu endereço: </label>
+      <input class="form-control" type="text" placeholder="Digite seu endereço" id="text-adress" name="adress" required> 
+    </div>
+
+    <!-- Campo para inserir a cidade -->
+    <div class="container">
+      <label class="form-label" for="text-city">Digite sua cidade: </label>
+      <input class="form-control" type="text" placeholder="Digite sua cidade" id="text-city" name="city" required> 
+    </div>
+    
+    <!-- Estrutura para selecionar o Estado -->
+    <!-- <div class="container"> -->
+    <div class="container">
+      <label class="form-label" for="states">Selecione seu Estado</label>
+      <select class="form-select" name="list-states" id="states" required></select>
+    </div>
+    <!-- </div> -->
+
+    <!-- Estrutura para selecionar casa ou apartamento -->
+    <div class="container">
+      <p class="lead">Tipo de moradia</p>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="house-type" id="apartment" value="apartment">
+        <label class="form-check-label" for="apartment">Apartamento</label>
+      </div>
+      
+
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="house-type" id="house" value="house">
+        <label class="form-check-label" for="house">Casa</label>
+      </div>
+    </div>
+    <!--Resumo do curriculo  -->
+    <div class="container">
+      <label class="form-label" for="abstract-cv">Escreva um resumo do seu curriculo</label>
+      <textarea class="form-control" name="abstract-cv" id="abstract-cv" required></textarea>
+    </div>
+
+    <!-- Cargos -->
+    <div class="container">
+      <label class="form-label" for="experience">Escreva sua experiência profissional</label>
+      <input class="form-control" type="text" name="experience" id="experience" required>
+    </div>
+
+    <!-- Descrição do cargo -->
+    <div class="container">
+      <label class="form-label" for="description">Descreva as atividades que você exercia</label>
+      <input class="form-control" type="text" name="description" id="description" required>
+    </div>
+
+
+    <!-- Data de inicio -->
+    <div class="container">
+      <label class="form-label" for="date-job">Insira a data de inicio do seu ultimo emprego</label>
+      <input  class="form-control" type="text" name="date-job" id="datepicker" placeholder="dd/mm/aaaa" required>
+    </div>
+
+    <div class="container">
+      <button class='btn btn-success' type="submit">Enviar</button>
+    </div>
+  </form>  
+  <script src="script.js"></script>
+
+  <!-- pickday -->
+  <script  src=" pikaday.js "> </script> 
+  <script>
+    let picker = new Pikaday({ field: document.getElementById('datepicker') });
+  </script>
+  
+  <!-- just-validate -->
+  <script src="./path/to/just-validate.min.js"></script>
+
+</body>
+</html>
