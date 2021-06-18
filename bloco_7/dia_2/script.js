@@ -1,5 +1,5 @@
 const order = {
-    name: 'Rafael Andrade',
+    name: 'Luiz Silva',
     phoneNumber: '11-98763-1416',
     address: {
       street: 'Rua das Flores',
@@ -30,7 +30,7 @@ const order = {
       }
     },
     payment: {
-      total: 60,
+      total: 50,
     },
   };
 
@@ -44,7 +44,7 @@ const order = {
   
   const orderModifier = (order) => {
     // Adicione abaixo as informações necessárias.
-  
+    console.log(`Olá ${order.name}, o total do seu pedido de muzzarela, calabresa e ${order.order.drinks.coke.type} é ${order.payment.total}`);  
   }
   
   orderModifier(order);
