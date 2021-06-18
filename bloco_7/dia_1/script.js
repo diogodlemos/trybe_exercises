@@ -1,5 +1,10 @@
-const oddsAndEvens = [13, 3, 4, 10, 7, 2];
-oddsAndEvens.sort(function(a,b) {
-    return a - b;
-});
-console.log(`Os números ${oddsAndEvens} se encontram ordenados de forma crescente!`);
+function fatorial(number) {
+    let fatorial = number;
+    let resposta;
+    for(let index = number -1; index > 0; index -=1 ){
+      fatorial *= index;
+      resposta = fatorial;
+    }
+    return resposta;
+}
+console.log(fatorial(4));
