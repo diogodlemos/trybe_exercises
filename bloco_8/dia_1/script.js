@@ -1,22 +1,32 @@
-const rightAnswers = ['A', 'C', 'B', 'D', 'A', 'A', 'D', 'A', 'D', 'C'];
-const studentAnswers = ['A', 'N.A', 'B', 'D', 'A', 'C', 'N.A', 'A', 'C', 'B'];
+const mage = {
+    healthPoints: 130,
+    intelligence: 45,
+    mana: 125,
+    damage: () => {
+      const damageMage = Math.random()* (2*mage.intelligence - mage.intelligence) + mage.intelligence;
+      mage.mana -= 15;
+      return {damage: damageMage, mana: mage.mana};
+    },
+};
+  
+const warrior = {
+  healthPoints: 200,
+  strength: 30,
+  weaponDmg: 2,
+  damage: () => {
+    return Math.random()* ((warrior.strength*warrior.weaponDmg) - warrior.strength) + warrior.strength;
+  },
+};
+  
+const dragon = {
+  healthPoints: 350,
+  strength: 50,
+  damage: () => {
+    return Math.random()* (dragon.strength - 15) + 15;
+  },
+};
+  
+  const battleMembers = { mage, warrior, dragon };
 
-const checkAnswers = (answers,correctAnswers) => {
-  let points = 0;
-  for (let index = 0; index <= answers.length; index += 1){
-    if (answers[index] === correctAnswers[index]) {
-        points += 1;
-    } else if (answers[index] !== correctAnswers[index]) {
-        points -= 0.5;
-    } else if (answers[index] === 'N.A') {
-        points += 0;
-    }
-  }
-  return points;
-}
+  console.log(mage.damage());
 
-const verifyAnswers = (answers, correctAnswers, checkAnswers) => {
-  return checkAnswers(answers,correctAnswers);
-}
-
-console.log(verifyAnswers(studentAnswers,rightAnswers,checkAnswers));
