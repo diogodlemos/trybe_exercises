@@ -13,9 +13,6 @@ const fetchJoke = () => {
 
 };
 
-// const appendJoke = () => {
-//   const jokeContainer = document.getElementById('jokeContainer');
-//   jokeContainer.innerText(fetchJoke());
-// }
+
 
 window.onload = () => fetchJoke();
