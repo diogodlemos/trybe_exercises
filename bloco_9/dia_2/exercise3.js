@@ -13,6 +13,22 @@ const myPromise = () => {
       reject();
     })
   }
-  
-  myPromise().then((number) => console.log(number , [number/2]))
-             .catch(()=> console.log('Promise rejeitada'));
+  const arrayDiv = [];
+  myPromise().then((number) => {
+    arrayDiv.push(number/2);
+    return arrayDiv;
+    })
+    .then((number) => {
+      arrayDiv.push(number/3);
+      return arrayDiv;
+    })
+    .then((number) => {
+        arrayDiv.push(number/5);
+        return arrayDiv;
+    })
+    .then((number) => {
+        arrayDiv.push(number/10);
+        return arrayDiv;
+    })
+    .then((number, arrayDiv) => console.log(number, arrayDiv))
+    .catch(()=> console.log('Promise rejeitada'));
