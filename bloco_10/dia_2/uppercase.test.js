@@ -1,4 +1,3 @@
-const { expect } = require('@jest/globals');
 const uppercase = require('./uppercase');
 
 describe('Dada uma palavra verifique se a palavra está com letras maiusculas', () => {

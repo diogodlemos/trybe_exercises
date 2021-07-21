@@ -3,5 +3,5 @@ const generateRandomNumber = () => {
   console.log(number);
 }
 
-module.exports = generateRandomNumber;
+module.exports = { generateRandomNumber };
 
