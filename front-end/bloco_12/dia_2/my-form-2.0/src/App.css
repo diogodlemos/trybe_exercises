@@ -7,6 +7,57 @@
   pointer-events: none;
 }
 
+body {
+  color: aliceblue;
+}
+
+h1 {
+  color: #282c34;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.buttons {
+  color: antiquewhite;
+  font-size: large;
+  font-weight:700;
+  background-color: blue;
+  margin: 20px;
+  width: 200px;
+  height: 60px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 50%;
+  padding: 30px;
+}
+
+textarea {
+  margin: 10px;
+}
+
+.container-forms {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  background-color: #282c34;
+}
+
+input {
+  margin: 10px;
+}
+
+select {
+  margin: 10px;
+}
+
 #name {
   text-transform: uppercase;
 }
